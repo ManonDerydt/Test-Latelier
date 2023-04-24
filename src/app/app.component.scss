@@ -1,0 +1,318 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.informations{
+  color: #F2753B;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.close-arrow{
+  width: 7em;
+}
+
+.pictures-home{
+  width: 15em;
+  height: 12em;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.input-searchbar{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20rem;
+  height: 2.5em;
+  border-radius: 15px;
+  border: none;
+  background-color: #000000;
+  opacity: 30%;
+  font-size: 1.8em;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  padding-left: 3%;
+  padding-right: 10%;
+  color: #EBAD65;
+}
+
+input[type="text"]::-moz-placeholder {
+  color: #EBAD65;
+}
+
+.block{
+  width: 35em;
+  height: 12em;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 3%;
+  position: relative;
+  display: flex;
+  box-shadow: 0 0 8px rgb(0 0 0 / 50%);
+}
+
+.Img-Player{
+  width: 11.9em;
+}
+
+.Img-Player-serena{
+  width: 16em;
+}
+
+.Img-Player-Stan{
+  width: 12.5em;
+}
+
+.Img-Player-Venus{
+  width: 12.4em;
+}
+
+.block-image{
+  width: 45%;
+}
+
+.name-players{
+  color: #F2753B;
+  font-size: 1.4em;
+}
+
+.block-score{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-score{
+  font-size: 1em;
+  color: #000000;
+  opacity: 30%;
+  font-weight: 700;
+}
+
+.block-informations{
+  width: 50%;
+  padding-top: 3%;
+}
+
+
+//RESPONSIVE DESKTOP
+@media screen and (min-width: 769px) {
+  .mobile-only{
+    display: none;
+  }
+}
+
+//RESPONSIVE MOBILE
+@media screen and (max-width: 768px) {
+
+  .desktop-only{
+    display: none;
+  }
+
+  .flex-mobile{
+    display: flex;
+  }
+
+  .block {
+    display: block;
+    width: 90%;
+    margin-top: 10%;
+    box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+  }
+
+  .block-informations{
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .block-score{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 5%;
+    background-color: floralwhite;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    padding-top: 5%;
+    border-bottom: 3px solid #F2753B;
+  }
+
+  .name-players{
+    color: #F2753B;
+    padding-top: 20%;
+  }
+
+  .title-card{
+    margin-left: 10% !important;
+    font-size: 40px !important;
+  }
+
+  .pictures{
+    height: 60% !important;
+  }
+
+  .flag{
+    width: 4em !important;
+  }
+
+  .country-code{
+    font-size: 1em !important;
+  }
+
+  .first-inrmations{
+    width: 55% !important;
+    margin-left: 27% !important;
+    text-align: center !important;
+  }
+
+  .second-informations{
+    margin-top: 3% !important;
+    margin-left: 27% !important;
+    width: 55% !important;
+    text-align: center !important;
+  }
+
+  .form{
+    width: 90% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 10% !important;
+  }
+
+  .input-searchbar{
+    width: 80% !important;
+    margin-left: 5% !important;
+  }
+
+  .cross{
+    width: 20% !important;
+    margin-left: 0 !important;
+    margin-top: -20% !important;
+  }
+}
+
+.card{
+  width: 90%;
+  background-color: white;
+  z-index: 9999;
+  margin-left: 5%;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  height: 75vh;
+  overflow-y: hidden;
+}
+
+.title-card{
+  margin-left: 30%;
+  font-size: 80px;
+}
+
+.firstname{
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 2px #d60, 0 0 0px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
+
+}
+
+.lastname{
+margin: 0;
+color: #F2753B;
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+}
+
+.pictures{
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.first-inrmations, second-informations{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 40%;
+  text-align: center;
+}
+
+.second-informations{
+  margin-top: 3%;
+  display: flex;
+  margin-left: 40%;
+  width: 50%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.block-i{
+  width: 10%;
+}
+
+.country{
+  margin-left: 80%;
+  position: absolute;
+  margin-top: 2%;
+}
+
+.flag{
+  width: 12em;
+
+}
+
+.country-code{
+  text-align: center;
+  color: #000000;
+  opacity: 30%;
+  font-size: 3em;
+  margin-top: 0;
+}
+
+.form{
+  background: white;
+  width: 40%;
+  margin-left: 50%;
+  padding: 3%;
+  border: 3px solid #F2753B;
+  margin-bottom: 5%;
+}
+
+.button-form{
+  margin-top: 5%;
+  border: none;
+  background-color: #F2753B;
+  color: white !important;
+  padding: 3%;
+  border-radius: 35px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.content-button{
+  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -5%;
+}
+
+.content-card{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
+  position: fixed;
+  top: 15%;
+}
+
+.button-card{
+  background: none;
+  border: none;
+}
+
+.cross{
+  width: 15%;
+  margin-left: 85%;
+}
